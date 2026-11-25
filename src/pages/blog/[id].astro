@@ -1,6 +1,6 @@
 ---
 import LayoutPosts from '../../layouts/LayoutPosts.astro';
-import Navhero from '../../components/navhero.astro'
+import Navresto from '../../components/navresto.astro';
 
 import { getCollection, render } from 'astro:content';
 // 1. Generate a new path for every collection entry
@@ -17,22 +17,121 @@ const { Content } = await render(post);
 ---
 
 <LayoutPosts titulo={post.data.title}>
+    <Navresto></Navresto>
+
     <article class="post">
-        <Navhero></Navhero>
         <h1 class="titulo">{post.data.title}</h1>
-        <Content />
+        <div class="markdown-content">
+            <Content />
+        </div>
     </article>
 </LayoutPosts>
 
 <style>
-    .titulo{
-        text-transform: uppercase;
+  .post {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin-inline: auto;
+    padding-block: 2rem;
+    text-justify: inter-word;
+  }
+
+  .markdown-content {
+    line-height: 1.75;
+    overflow-wrap: break-word;
+  }
+
+  /* Headings */
+  .markdown-content :global(h1) {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .markdown-content :global(h2) {
+    font-size: 1.9rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .markdown-content :global(h3) {
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+ 
+  .markdown-content :global(p) {
+    font-size: 1.4rem;
+    margin-block: 1rem;
+  }
+
+
+  .markdown-content :global(img) {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 8px;
+  }
+
+
+  .markdown-content :global(ul),
+  .markdown-content :global(ol) {
+    padding-left: 1.5rem;
+    margin-block: 1rem;
+  }
+
+  .markdown-content :global(li) {
+    margin-block: 0.5rem;
+  }
+
+ 
+  .markdown-content :global(a) {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+ 
+  .markdown-content :global(blockquote) {
+    border-left: 4px solid #888;
+    padding-left: 1rem;
+    margin-block: 1.5rem;
+    opacity: 0.85;
+  }
+
+
+  .markdown-content :global(pre) {
+    overflow-x: auto;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .markdown-content :global(code) {
+    font-family: monospace;
+  }
+
+
+  .markdown-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    margin-block: 1.5rem;
+  }
+
+  .markdown-content :global(th),
+  .markdown-content :global(td) {
+    padding: 0.75rem;
+    border: 1px solid #888;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 600px) {
+    .article-container {
+      width: min(100% - 1.25rem, 760px);
     }
 
-    .post{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .markdown-content :global(h1) {
+      font-size: 1.8rem;
     }
 </style>

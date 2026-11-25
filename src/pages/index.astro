@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navhero from '../components/navhero.astro';
+import Noticiahero from '../components/noticiahero.astro';
+import Noticiarecientec2 from '../components/noticiarecientec2.astro'
 ---
 
 <Layout titulo="F1 BOX">
@@ -10,9 +12,42 @@ import Navhero from '../components/navhero.astro';
 	</header>
 
 	<Navhero></Navhero>
+
+	<h1 class="noticias-recientes">Noticias recientes</h1>
+
+	<div class="noticia-hero">
+		<Noticiahero></Noticiahero>
+	</div>
+	
+	<div class="noticias-anteriores">
+		<h1>Noticias anteriores</h1>
+	</div>
+
+	<div>
+	<Noticiarecientec2></Noticiarecientec2>
+	</div>
+
 </Layout>
 
 <style>
+	.noticias-recientes {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.noticias-anteriores {
+		display: flex;
+		justify-content: center;
+	}
+
+	.noticia-hero {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		margin-bottom: 2rem;
+	}
+
 	.slogan-hero {
 		margin-top: 0.5rem;
 		margin-bottom: 1rem;
@@ -22,15 +57,18 @@ import Navhero from '../components/navhero.astro';
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		background-image: url(/src/assets/img/F1vegashero.jpg);
-		background-position-y: 80%;
-		background-position-x: right;
-		background-size: cover;
-		background-repeat: no-repeat;
+		justify-content: center;
+		min-height: 10%;
+		background-image: url('/src/assets/img/Blur_F1vegashero.jpg');
+    	background-position: right 80%;
+    	background-size: cover;
+    	background-repeat: no-repeat;
 	}
 
 	.logo-hero {
 		margin-top: 1rem;
 		margin-bottom: 0.5rem;
+
 	}
+
 </style>

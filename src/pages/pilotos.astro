@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Navresto from '../components/navresto.astro'
+import Pilotos from '../components/pilotos.astro'
+---
+
+<Layout>
+    <Navresto></Navresto>
+
+    <h1 class="pilotos">Pilotos y equipos</h1>
+
+    <Pilotos></Pilotos>
+</Layout>
+
+<style>
+    .pilotos {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+</style>

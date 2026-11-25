@@ -1,0 +1,269 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navhero from '../components/navhero.astro';
+
+import albon from '../assets/img/pilotos/albon.png';
+import alonso from '../assets/img/pilotos/alonso.png';
+import antonelli from '../assets/img/pilotos/antonelli.png';
+import bearman from '../assets/img/pilotos/bearman.png';
+import bortoleto from '../assets/img/pilotos/bortoleto.png';
+import bottas from '../assets/img/pilotos/bottas.png';
+import colapinto from '../assets/img/pilotos/colapinto.png';
+import gasly from '../assets/img/pilotos/gasly.png';
+import hadjar from '../assets/img/pilotos/hadjar.png';
+import hamilton from '../assets/img/pilotos/hamilton.png';
+import hulkenberg from '../assets/img/pilotos/hulkenberg.png';
+import lawson from '../assets/img/pilotos/lawson.png';
+import leclerc from '../assets/img/pilotos/leclerc.png';
+import lindblad from '../assets/img/pilotos/lindblad.png';
+import norris from '../assets/img/pilotos/norris.png';
+import ocon from '../assets/img/pilotos/ocon.png';
+import perez from '../assets/img/pilotos/perez.png';
+import piastri from '../assets/img/pilotos/piastri.png';
+import russell from '../assets/img/pilotos/russell.png';
+import sainz from '../assets/img/pilotos/sainz.png';
+import stroll from '../assets/img/pilotos/stroll.png';
+import verstappen from '../assets/img/pilotos/verstappen.png';
+---
+
+<Layout titulo="Equipos F1 2026">
+	<section class="lista-equipos">
+
+		<article class="equipo" style="border-left-color: #FF87BC;">
+			<h2>Alpine</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Pierre_Gasly" target="_blank">
+					<img class="foto-piloto" src={gasly.src} alt="Foto de Pierre Gasly" />
+					<span>Pierre Gasly</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Franco_Colapinto" target="_blank">
+					<img class="foto-piloto" src={colapinto.src} alt="Foto de Franco Colapinto" />
+					<span>Franco Colapinto</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #229971;">
+			<h2>Aston Martin</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Fernando_Alonso" target="_blank">
+					<img class="foto-piloto" src={alonso.src} alt="Foto de Fernando Alonso" />
+					<span>Fernando Alonso</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Lance_Stroll" target="_blank">
+					<img class="foto-piloto" src={stroll.src} alt="Foto de Lance Stroll" />
+					<span>Lance Stroll</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #F50537;">
+			<h2>Audi</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Nico_H%C3%BClkenberg" target="_blank">
+					<img class="foto-piloto" src={hulkenberg.src} alt="Foto de Nico Hülkenberg" />
+					<span>Nico Hülkenberg</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Gabriel_Bortoleto" target="_blank">
+					<img class="foto-piloto" src={bortoleto.src} alt="Foto de Gabriel Bortoleto" />
+					<span>Gabriel Bortoleto</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #E5E5E5;">
+			<h2>Cadillac</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Sergio_P%C3%A9rez" target="_blank">
+					<img class="foto-piloto" src={perez.src} alt="Foto de Sergio Pérez" />
+					<span>Sergio Pérez</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Valtteri_Bottas" target="_blank">
+					<img class="foto-piloto" src={bottas.src} alt="Foto de Valtteri Bottas" />
+					<span>Valtteri Bottas</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #E80020;">
+			<h2>Ferrari</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Charles_Leclerc" target="_blank">
+					<img class="foto-piloto" src={leclerc.src} alt="Foto de Charles Leclerc" />
+					<span>Charles Leclerc</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Lewis_Hamilton" target="_blank">
+					<img class="foto-piloto" src={hamilton.src} alt="Foto de Lewis Hamilton" />
+					<span>Lewis Hamilton</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #B6BABD;">
+			<h2>Haas</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Esteban_Ocon" target="_blank">
+					<img class="foto-piloto" src={ocon.src} alt="Foto de Esteban Ocon" />
+					<span>Esteban Ocon</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Oliver_Bearman" target="_blank">
+					<img class="foto-piloto" src={bearman.src} alt="Foto de Oliver Bearman" />
+					<span>Oliver Bearman</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #FF8000;">
+			<h2>McLaren</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Lando_Norris" target="_blank">
+					<img class="foto-piloto" src={norris.src} alt="Foto de Lando Norris" />
+					<span>Lando Norris</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Oscar_Piastri" target="_blank">
+					<img class="foto-piloto" src={piastri.src} alt="Foto de Oscar Piastri" />
+					<span>Oscar Piastri</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #27F4D2;">
+			<h2>Mercedes</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/George_Russell" target="_blank">
+					<img class="foto-piloto" src={russell.src} alt="Foto de George Russell" />
+					<span>George Russell</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Andrea_Kimi_Antonelli" target="_blank">
+					<img class="foto-piloto" src={antonelli.src} alt="Foto de Kimi Antonelli" />
+					<span>Kimi Antonelli</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #6692FF;">
+			<h2>Racing Bulls</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Liam_Lawson" target="_blank">
+					<img class="foto-piloto" src={lawson.src} alt="Foto de Liam Lawson" />
+					<span>Liam Lawson</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Arvid_Lindblad" target="_blank">
+					<img class="foto-piloto" src={lindblad.src} alt="Foto de Arvid Lindblad" />
+					<span>Arvid Lindblad</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #3671C6;">
+			<h2>Red Bull Racing</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Max_Verstappen" target="_blank">
+					<img class="foto-piloto" src={verstappen.src} alt="Foto de Max Verstappen" />
+					<span>Max Verstappen</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Isack_Hadjar" target="_blank">
+					<img class="foto-piloto" src={hadjar.src} alt="Foto de Isack Hadjar" />
+					<span>Isack Hadjar</span>
+				</a>
+			</div>
+		</article>
+
+		<article class="equipo" style="border-left-color: #64C4FF;">
+			<h2>Williams</h2>
+			<div class="pilotos">
+				<a class="piloto" href="https://liquipedia.net/formula1/Alexander_Albon" target="_blank">
+					<img class="foto-piloto" src={albon.src} alt="Foto de Alex Albon" />
+					<span>Alex Albon</span>
+				</a>
+				<a class="piloto" href="https://liquipedia.net/formula1/Carlos_Sainz" target="_blank">
+					<img class="foto-piloto" src={sainz.src} alt="Foto de Carlos Sainz" />
+					<span>Carlos Sainz</span>
+				</a>
+			</div>
+		</article>
+
+	</section>
+</Layout>
+
+<style>
+	.slogan-hero {
+		margin-top: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.barra-hero {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 10%;
+		background-image: url('/src/assets/img/Blur_F1vegashero.jpg');
+		background-position: right 80%;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.logo-hero {
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.titulo-equipos {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 2rem;
+	}
+
+	.lista-equipos {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.5rem;
+		margin-bottom: 2rem;
+	}
+
+	.equipo {
+		width: 90%;
+		max-width: 36rem;
+		padding: 1rem;
+		background-color: rgb(28, 30, 48);
+		border-radius: 0.5rem;
+		border-left: 0.5rem solid #ffffff;
+	}
+
+	.equipo h2 {
+		margin-top: 0;
+		margin-bottom: 1rem;
+	}
+
+	.pilotos {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+	}
+
+	.piloto {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		flex: 1;
+		min-width: 12rem;
+		padding: 0.5rem;
+		border-radius: 0.5rem;
+		text-decoration: none;
+	}
+
+	.piloto:hover {
+		background-color: rgb(42, 45, 70);
+	}
+
+	.foto-piloto {
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: top;
+		background-color: rgb(14, 15, 26);
+	}
+</style>
