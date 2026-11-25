@@ -12,7 +12,7 @@ const posts = (await getCollection('blog', ({ data }) => data.pubDate <= new Dat
       <img src={post.data.cover} alt={post.data.title} class="img" />
 
       <div class="contenido">
-        <a href={`/blog/${post.id}/`} class="titulo">
+        <a href={`/blogact1/blog/${post.id}/`} class="titulo">
           <h3>{post.data.title}</h3>
         </a>
 
