@@ -1,0 +1,56 @@
+
+	<section class="barra-nav-hero">
+		<a href="blog/55"><div class="boton-nav">Carreras</div></a>
+		<div class="boton-nav">Pilotos</div>
+		<div class="boton-nav">Equipos</div>
+		<div class="boton-nav">Coches</div>
+	</section>
+
+
+<style>
+
+	a { 
+		display: block;
+		color: inherit;
+		text-decoration: none;
+		z-index: 1;
+	 }
+	 
+	a:hover {
+		color: rgba(0, 0, 0, 0.463);
+	}
+
+	.barra-nav-hero {
+		display: flex;
+		flex-direction: row;
+		z-index: 999;
+		align-content: center;
+		justify-content: center;
+		padding: 1em;
+		gap: 6em;
+		border-style: solid;
+		border-color: #0e0f1a;
+		border-bottom-color: #141424;
+	}
+
+	
+	@media screen and (width <= 900px) {
+		.barra-nav-hero {
+			flex-direction: column;
+			gap: 1em;
+			border-style: solid;
+			border-color: #0e0f1a;
+			border-bottom-color: #141424;
+  	}
+}
+
+	.boton-nav {
+		display: flex;
+		max-width: 100%;
+		background-color: rgb(240, 10, 10);
+		padding: 0.5em 1.5em;
+		border-radius: 4px;
+		text-transform: uppercase;
+	}
+
+</style>

@@ -1,0 +1,38 @@
+---
+import LayoutPosts from '../../layouts/LayoutPosts.astro';
+import Navhero from '../../components/navhero.astro'
+
+import { getCollection, render } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<LayoutPosts titulo={post.data.title}>
+    <article class="post">
+        <Navhero></Navhero>
+        <h1 class="titulo">{post.data.title}</h1>
+        <Content />
+    </article>
+</LayoutPosts>
+
+<style>
+    .titulo{
+        text-transform: uppercase;
+    }
+
+    .post{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
